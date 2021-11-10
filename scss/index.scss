@@ -1,0 +1,21 @@
+// variables and Functions
+@import 'variables';
+
+// base & Layout
+@import 'base';
+@import 'breakpoints';
+@import 'upperstyling';
+@import 'lowerstyling';
+@import 'interview.scss';
+@import 'footer';
+@import 'grid';
+@import 'titleEffect';
+
+// Components
+@import './components/button';
+@import './components/carousel';
+@import './components/interviewCarousel';
+@import './components/PDCarousel';
+@import './components/RDCarousel';
+@import './components/communityCarousel';
+@import './components/card';

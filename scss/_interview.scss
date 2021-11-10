@@ -1,0 +1,29 @@
+.interview-wrapper {
+	background: $offwhite;
+	display: flex;
+	flex-direction: column;
+	padding-top: 3rem;
+	p {
+		font-weight: 300;
+		font-size: 1.1rem;
+	}
+}
+
+.interview-text-wrapper {
+	display: flex;
+	flex-direction: column;
+	margin: 1vh 1rem 2vh 1rem;
+	h1 {
+		margin: 0;
+	}
+}
+
+@include md {
+	.interview-wrapper {
+		flex-direction: row;
+	}
+	.interview-text-wrapper {
+		flex-direction: row;
+		margin-left: 4rem;
+	}
+}

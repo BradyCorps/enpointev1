@@ -1,0 +1,54 @@
+.lower-wrapper {
+	height: 100%;
+	background-color: $offwhite;
+	align-items: flex-start;
+
+	.header {
+		font-weight: 400;
+		font-size: 1.8rem;
+		margin-bottom: 0.4rem;
+	}
+
+	.article-base-body {
+		padding: 3rem 1rem 1vh 1rem;
+
+		h1 {
+			width: 40%;
+		}
+
+		p {
+			font-size: 1.1rem;
+			font-weight: 300;
+		}
+	}
+}
+
+// CTA styling\
+.cta {
+	padding: 6vh 1rem 1vh 1rem;
+}
+.cta-wrapper {
+	display: flex;
+	flex-direction: column;
+}
+@include lg {
+	.cta-wrapper {
+		flex-direction: row;
+		.cta-image-wrapper {
+			width: 100%;
+
+			img {
+				width: 50vw;
+				height: 100%;
+			}
+		}
+		.cta-text-wrapper {
+			padding-left: 1rem;
+		}
+	}
+	.article-base-body {
+		p {
+			margin-right: 1rem;
+		}
+	}
+}

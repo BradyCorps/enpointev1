@@ -1,0 +1,121 @@
+.event-wrapper {
+	background: $offwhite;
+	width: 98vw;
+	height: 75%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: auto;
+
+	padding: 6rem 0;
+
+	figure {
+		display: flex;
+		position: relative;
+		margin-bottom: 1rem;
+		width: 90%;
+		height: 550px;
+		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+		transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+		overflow: hidden;
+		&:hover {
+			box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+				0 10px 10px rgba(0, 0, 0, 0.22);
+			img {
+				transform: scale(1.25);
+			}
+			figcaption {
+				bottom: 0;
+			}
+		}
+		h1 {
+			position: absolute;
+			top: 50px;
+			left: 0;
+			margin: 0 0 0 0.4rem;
+			padding: 0;
+			color: white;
+			font-size: 2rem;
+			font-weight: 100;
+			line-height: 1;
+		}
+		img {
+			height: 100%;
+			transition: 0.25s;
+		}
+		figcaption {
+			position: absolute;
+			bottom: -50%;
+			left: 0;
+			margin: 0;
+			padding: 30px;
+			background-color: rgba(black, 0.85);
+			box-shadow: 0 0 20px rgba(black, 0.4);
+			color: white;
+			line-height: 1;
+			transition: 0.25s;
+			h3 {
+				margin: 0 0 20px;
+				padding: 0;
+				color: $offwhite;
+				font-weight: 300;
+			}
+			p {
+				font-size: 14px;
+				line-height: 1.75;
+			}
+		}
+	}
+}
+@include sm {
+	.event-wrapper {
+		figure {
+			figcaption {
+				bottom: -40%;
+			}
+		}
+	}
+}
+
+@include sm {
+	.event-wrapper {
+		figure {
+			figcaption {
+				bottom: -28%;
+			}
+		}
+	}
+}
+
+@include lg {
+	.event-wrapper {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		row-gap: 1rem;
+		figure {
+			margin: 0rem;
+
+			figcaption {
+				bottom: -38%;
+			}
+		}
+	}
+}
+
+@include xl {
+	.event-wrapper {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		column-gap: 2rem;
+		row-gap: 1rem;
+
+		figure {
+			margin: 0rem;
+
+			figcaption {
+				bottom: -40%;
+			}
+		}
+	}
+}
