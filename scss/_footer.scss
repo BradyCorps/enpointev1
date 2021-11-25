@@ -85,8 +85,8 @@
 					transition: fill 0.5s, height 0.3s, width 0.3s;
 
 					&:hover {
-						height: 20px;
-						width: 20px;
+						height: 30px;
+						width: 30px;
 						fill: $offwhite;
 					}
 				}
@@ -100,8 +100,8 @@
 				}
 				.logo-container {
 					.logo-hover {
-						height: 30px;
-						width: 30px;
+						height: 20px;
+						width: 20px;
 					}
 				}
 			}

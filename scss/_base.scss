@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
 body {
 	padding: 0;
 	margin: 0;
@@ -10,4 +12,16 @@ body {
 a {
 	text-decoration: none;
 	color: $offwhite;
+}
+
+h1 {
+	font-size: 2rem;
+	font-weight: 200;
+	color: $secondary;
+}
+
+h2 {
+	font-size: 1.5rem;
+	font-weight: 400;
+	color: $primary;
 }
